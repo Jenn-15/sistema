@@ -1,0 +1,27 @@
+/* Estilos adicionales para el PDF */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header img {
+    max-width: 150px;
+    height: auto;
+}
+.header-center {
+    text-align: center;
+}
+.content {
+    margin-bottom: 20px;
+}
+.footer-signatures {
+    clear: both;
+    margin-top: 20px;
+}
+.firma {
+    margin-bottom: 20px;
+}
+.firma-puesto {
+    margin-top: -10px;
+}

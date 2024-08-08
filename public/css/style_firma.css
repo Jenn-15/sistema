@@ -1,0 +1,63 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin-bottom: 150px; /* Espacio para las firmas */
+}
+
+.footer-signatures {
+    width: 100%;
+}
+
+/* Estilos específicos para la impresión */
+@media print {
+    .footer-signatures {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        height: 150px; /* Asegúrate de que esta altura sea suficiente para las firmas */
+        border-top: 1px solid black;
+    }
+
+    .signature-container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-signatures {
+        page-break-inside: avoid; /* Evita que se divida en múltiples páginas */
+    }
+
+    .firma {
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .firma-puesto {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .firma-nombre {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .clear {
+        clear: both;
+    }
+}

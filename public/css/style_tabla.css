@@ -1,0 +1,33 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    word-wrap: break-word;
+}
+
+th.smaller-text, td.smaller-text {
+    font-size: 12px;
+}
+
+th.wide-column, td.wide-column {
+    width: 15%; /* Ajusta este valor según necesites */
+}
+
+th.flexible-column, td.flexible-column {
+    width: auto; /* Dejar que esta columna ocupe el espacio restante */
+}
+
+.signature-section {
+    page-break-inside: avoid;
+}
+
+.serie-column {
+    max-width: 150px; /* Ancho máximo del campo de serie */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que excede el ancho máximo */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) al final del texto cortado */
+}
